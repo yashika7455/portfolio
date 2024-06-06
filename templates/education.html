@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+<body>
+<div>
+    <nav id="sidebar">
+        <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="#" class="active">Education</a></li>
+            <li><a href="/projects">Portfolio</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="choose">
+    
+    <h1 class="syntax">Education</h1>
+    <div class="timeline">
+    <ul>
+        <li>
+            <div class="timeline-circle">MCA</div>
+            <div class="timeline-content">
+                <p class="timeline-title">Chandigarh University, Punjab</p>
+                <p class="">7.05 CGPA<br>
+                Passing Year: 2024</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-circle">BCA</div>
+            <div class="timeline-content">
+                Guru Jambheshwar University, Hisar<br>
+                80.10%<br>
+                Passing Year: 2022
+            </div>
+        </li>
+        <li>
+            <div class="timeline-circle">12TH</div>
+            <div class="timeline-content">
+                Baba Banda Bahadur Public School, Hansi<br>
+                72.4%<br>
+                Passing Year: 2019
+            </div>
+        </li>
+        <li>
+            <div class="timeline-circle">10TH</div> 
+            <div class="timeline-content">
+                Baba Banda Bahadur Public School, Hansi<br>
+                83.6%<br>
+                Passing Year: 2017
+            </div>
+        </li>
+    </ul>
+    </div>
+
+
+    <h1 class="syntax">Certificates</h1>
+    <div class="certificate-slider">
+        <div class="cert-slides">
+            <!-- Add your certificate images here -->
+            <img src="{{ url_for('static', filename='img/git and github-1.png') }}">
+            <img src="{{ url_for('static', filename='img/GithubCertification.png') }}">
+            <img src="{{ url_for('static', filename='img/22MCC20160_Yashika-1.png') }}">
+        </div>
+        <button class="cert-prev">❮</button>
+        <button class="cert-next">❯</button>
+    </div>
+    
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+<body>
+<div>
+    <nav id="sidebar">
+        <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/education">Education</a></li>
+            <li><a href="/projects">Portfolio</a></li>
+            <li><a href="#" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="home"> 
+        <div class="left">
+            <h1 class ="contact">Contact Us</h1>
+            <div class="contact-container">
+                <form action="#" method="post"> <!-- You'll need to set the action to the server-side script that will process the data -->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+        
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="right">
+
+        </div>
+            
+</body>
+</html>
